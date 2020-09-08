@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "./App.css";
+import Tweet from "./components/Tweet";
 
 function App() {
-  const [person, setPerson] = useState([]);
-
-  function addPerson() {
-    setPerson(...person, "Andrei");
+  const [count, setCount] = useState(0);
+  function upCount() {
+    setCount(count + 1);
   }
   return (
     <div className="App">
-      <button onClick={addPerson}>Dies sind alle Personen {person}</button>
+      <p>Chick to Increse the Count</p>
+      <button onClick={upCount}>Action</button>
+      <p>{count}</p>
+      <h4>Hello</h4>
     </div>
   );
 }
