@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import Tweet from "./components/Tweet";
 
 function App() {
   const [count, setCount] = useState(0);
